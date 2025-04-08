@@ -1,10 +1,10 @@
 const RADIO_NAME = 'estacionkusfm';
 
 // Change Azuracast Stream URL Here, .
-const URL_STREAMING = 'https://113.30.149.133/listen/estacionkusfm/radio.mp3';
+const URL_STREAMING = 'https://radio.estacionkusmedios.com/listen/estacionkusfm/radio.mp3';
 
 //API URL Azuracast Now Playing
-const API_URL = 'https://113.30.149.133/api/nowplaying/2';
+const API_URL = 'https://radio.estacionkusmedios.com/api/nowplaying/2';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "2e4317c4fc225989:cab0a9b66d05c81a3fe1b61236521fe6";
@@ -494,7 +494,7 @@ function updateHistoryUI() {
 // Ejemplo de función para obtener datos de una API
 async function fetchSongData() {
     try {
-        const response = await fetch('http://113.30.149.133/api/nowplaying/2');
+        const response = await fetch('https://radio.estacionkusmedios.com');
         const data = await response.json();
         updateSongInfo(data.title, data.artist);
     } catch (error) {
@@ -503,7 +503,7 @@ async function fetchSongData() {
 }
 
 // Llama a fetchSongData si usas una API
-// fetchSongData();
+fetchSongData();
 
 // Llamado inicial a las funciones de actualización
 getStreamingData();
