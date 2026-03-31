@@ -1,7 +1,7 @@
 const RADIO_NAME = 'estacionkusfm';
 
 // Change Azuracast Stream URL Here, .
-const URL_STREAMING = 'https://radio.estacionkusmedios.com/listen/estacionkusfm/radio.mp3';
+const URL_STREAMING = 'https://chillout.streeemer.com/listen/chillout/radio.mp3';
 
 //API URL Azuracast Now Playing
 const API_URL = 'https://radio.estacionkusmedios.com/api/nowplaying/2';
